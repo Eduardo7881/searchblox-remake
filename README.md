@@ -26,3 +26,13 @@ and the best thing! it's open-source and it's unobfuscated.
 
 The project works, but still needs some polishing to be perfect.  
 You can follow development progress and suggest improvements here on GitHub.
+
+## WARNING:
+
+The project may be not up to date due to Roblox Updates.
+
+
+AND IT WILL STOP WORKING if roblox shutdown's legacy api's.
+
+
+So, if that happens, please file a issue with some Roblox API's. Thanks for Understanding
