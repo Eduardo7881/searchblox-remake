@@ -1,15 +1,13 @@
 document.getElementById('findBtn').addEventListener('click', async () => {
   const userId = document.getElementById('userId').value.trim();
   const resultDiv = document.getElementById('result');
-  resultDiv.innerHTML = '🔄 Buscando...';
+  resultDiv.innerHTML = '🔄 Searching...';
 
   try {
-    // 1. Buscar nome do usuário
     const userRes = await fetch(`https://users.roblox.com/v1/users/${userId}`);
     const userData = await userRes.json();
     const username = userData.name;
 
-    // 2. Buscar presença
     const presenceRes = await fetch('https://presence.roblox.com/v1/presence/users', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -24,15 +22,15 @@ document.getElementById('findBtn').addEventListener('click', async () => {
       const joinUrl = `roblox://experiences/start?placeId=${placeId}&gameInstanceId=${gameId}`;
 
       resultDiv.innerHTML = `
-        <p>👤 <strong>${username}</strong> está em jogo!</p>
-        <p>🆔 Servidor: <code>${gameId}</code></p>
-        <a href="${joinUrl}" style="color: #00ff88;">🔗 Entrar no servidor</a>
+        <p><strong>${username}</strong> is in game!</p>
+        <p>Server ID: <code>${gameId}</code></p>
+        <a href="${joinUrl}" style="color: #00ff88;">🔗 Join Server</a>
       `;
     } else {
-      resultDiv.innerHTML = `<p>👤 <strong>${username}</strong> não está em jogo no momento.</p>`;
+      resultDiv.innerHTML = `<p><strong>${username}</strong> is not in game.</p>`;
     }
   } catch (err) {
-    resultDiv.innerHTML = '❌ Erro ao buscar dados. Verifique o ID.';
+    resultDiv.innerHTML = '❌ Error when fetching data. Verify the ID.';
     console.error(err);
   }
 });
