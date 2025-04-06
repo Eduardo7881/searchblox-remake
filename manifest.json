@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "SearchBlox (LEGACY)",
+  "description": "Search Roblox servers for a desired player (LEGACY SEARCHBLOX) (THIS IS NOT A VIRUS! IF YOU WANT, CHECK THE SOURCE)",
+  "version": "0.5.6",
+  "icons": {
+	  "48": "images/48x48.webp"
+  },
+  "permissions": ["storage", "scripting"],
+  "host_permissions": [
+    "https://presence.roblox.com/*",
+    "https://users.roblox.com/*",
+    "https://games.roblox.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "(LEGACY) SearchBlox"
+  }
+}
