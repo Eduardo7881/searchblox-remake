@@ -7,6 +7,7 @@ Unlike the old version, **this project is 100% safe, transparent, and has no bac
 
 The original SearchBlox was taken down from the Chrome Web Store due to malicious code that put users' accounts at risk.  
 **This remake has none of that.** It's been rebuilt from scratch with a focus on safety, privacy, and real functionality.
+and the best thing! it's open-source and it's unobfuscated.
 
 🚫 **No backdoors**  
 🔐 **No data stealing**  
