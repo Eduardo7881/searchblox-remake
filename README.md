@@ -1,3 +1,6 @@
+## WHY IS THIS ARCHIVED?
+Manifest v2 is being deprecated. I'll make a Manifest v3 port.
+
 # SearchBlox Remake
 
 This is a **remake** of the original SearchBlox — a popular Roblox extension used to find which server a specific player is in.  
